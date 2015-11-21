@@ -1,0 +1,95 @@
+<template name="frontendLayout">
+<div class="sidebarMenu">
+ <ul class="nav navbar-nav navbar-right">
+      <li><a class="page-scroll aServices-m" href="#"><img src="img/service.svg" alt="service">Freebies</a> </li>
+     <!-- <li><a class="page-scroll aTeam-m" href="#"><img src="img/team.svg" alt="team">Paid</a> </li>-->
+      <li><a class="page-scroll aTech-m" href="#"><img src="img/tech.svg" alt="technology">Learn about us</a> </li>
+  </ul>
+</div>
+<div id="main" class="moveRight">
+<div id="overlay"></div>
+<header class="headerLand headerGhost">
+  <div class="themeImg">
+    <nav id="navbaric" data-sr="enter top hustle 50px over 1.5s" class="moveRight navigation-home navbar navbaric themeNav" role="navigation">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle collapsed push" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><i class="fa fa-ellipsis-v"></i> </button>
+            <a class="navbar-brand page-scroll aHome" href="#home"><img src="img/logo.png" alt="vanila.io"></a>
+        </div>
+      <div class="collapse navbar-collapse" id="">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll aServices" href="#services">Freebies</a> </li>
+          <!--<li><a id="scrollTeam" class="page-scroll aTeam" href="#team">Paid</a> </li>-->
+          <li><a class="page-scroll aTech" href="#technologies">Learn about us</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="headerWrap-themes">
+    <canvas width='1200' height='480' id="hero-bar" style="display:none;"></canvas>
+    <div class="row rowHeader">
+      <div class="container">
+        <h1 data-sr="enter top wait 0.6s over 1.2s">Vanila.io Ghost Themes
+        </h1>
+        <p data-sr="enter top wait 1s over 1s">
+          Check out our collection of custom made Ghost themes.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+<div class="mainContent">
+  <div id="services" class="row rowService rowFree rowBlue">
+    <div class="blueImg">
+      <h2>Free themes</h2>
+      <br>
+      {{> thumbnails}}
+    </div>
+  </div>
+</div>
+<div id="technologies" class="row rowService rowMore">
+  <h2>Do you like our Ghost themes?</h2>
+  <p>If yes, maybe you would like to check out our official website and see what else our team do!</p>
+  <a href="http://www.vanila.io" class="btn btn-default">Check out Vanila</a>
+  <footer>
+     <div class="themeContact container">
+      <ul class="ulSocials">
+        <li><a class="iconTw" href="https://twitter.com/vanila_io"><i class="fa fa-twitter"></i></a> </li>
+        <li><a class="iconFb" href="https://www.facebook.com/Vanilaio-1640968586167308/"><i class="fa fa-facebook"></i></a> </li>
+        <li><a class="iconLi" href="https://www.linkedin.com/company/vanila-io---web-studio"><i class="fa fa-linkedin"></i></a> </li>
+      </ul>
+      <span class="themeEmail">
+        Our email: <span>stefan@vanila.io</span>
+      </span>
+     </div>
+  </footer>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/scrollReveal.js"></script>
+<script src="js/velocity.js"></script>
+<script src="js/typed.js"></script>
+<script src="js/chart.min.js"></script>
+<script src="js/script.js"></script>
+<script>/*<![CDATA[*/var div_width=300;var div_count=9;var reset_offset=div_width*(div_count-1);function init(){for(i=0;i<div_count;i++){var a=document.getElementById("fooObject"+i);a.style.left=""+((i-1)*div_width)+"px"}doMove()}function doMove(){for(i=0;i<div_count;i++){var b=document.getElementById("fooObject"+i);var a=parseInt(b.style.left);b.style.left=""+(a+1)+"px";if(a>=reset_offset){b.style.left=""+(-div_width)+"px"}}setTimeout(doMove,10)}init();/*]]>*/</script>
+<script>(function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-1200538-34","auto");ga("send","pageview");</script>
+<script type="text/javascript">
+   var _mfq = _mfq || [];
+   (function() {
+       var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true;
+       mf.src = "//cdn.mouseflow.com/projects/bce00292-bd36-4b6e-acde-b691d85b7f28.js";
+       document.getElementsByTagName("head")[0].appendChild(mf);
+   })();
+</script>
+<script>
+var intViewportHeight = window.innerHeight;
+if (intViewportHeight < 605){
+    $("#headerAuto").addClass('heightAuto');
+}
+else {
+    $("#headerAuto").removeClass('heightAuto');
+}
+</script>
+</template>

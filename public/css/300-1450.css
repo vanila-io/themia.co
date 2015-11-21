@@ -1,0 +1,11 @@
+@media screen and (min-width: 1450px) {
+    .memberInner {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .item h2 {
+        font-size: 1.7em;
+        padding: 0 20px;
+    }
+}

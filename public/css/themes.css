@@ -1,0 +1,180 @@
+.themeNav{
+    background:transparent;
+}
+
+.themeImg{
+
+background-image: url("http://jelenajovanovic.im/img/seamlessBg.png");background-position: center center;
+height: 100%;
+width: 100%;
+
+
+}
+
+.themeImg h1, .themeImg p{
+    text-align: center;
+    width: 100%;
+}
+
+.headerGhost{
+    height: 70%;
+
+}
+
+.headerWrap-themes{
+            position: absolute;
+    top: 0px;
+    background-color: rgba(12, 29, 44, 0.9) ;
+    width:100%;
+    height: 100%;
+}
+
+.themeNav.top-nav-collapse{
+    background-color: #232830;
+}
+
+.rowFree, .rowPaid, .rowMore{
+    padding:30px;
+}
+
+.thumbnail{
+    background: #1C2027 none repeat scroll 0% 0%;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border:none;
+    border-radius: 0;
+    padding: 15px;
+}
+
+.caption h3{
+    color: #FFF;
+}
+
+.caption p{
+   color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2em;
+}
+
+.caption a{
+    background:#21252C;
+    border:none;
+    color:#fff;
+}
+
+.caption .btn:hover{
+    box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.3), 0px 15px 12px rgba(0, 0, 0, 0.22);
+background:#21252C;
+color:#fff;
+}
+
+.btnPrice{
+    float: right;
+        background:#21252C;
+    border:none;
+    color:#fff;
+}
+
+.colAuthor .memberWrap{
+    height: auto!important;
+}
+
+.colAuthor{
+    margin: 0 auto!important;
+    display: block!important;
+    float: none!important;
+    background: transparent!important;
+}
+
+.authorImg{
+    height: 120px !important;
+    width: 120px !important;
+}
+
+.rowMore{
+    background: rgb(246, 123, 124);
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.rowMore h2{
+    color: #FFF;
+margin-bottom: 40px;
+font-size: 46px;
+text-align: center;
+margin-top: 80px;
+}
+
+.rowMore p{
+    color:rgba(255, 255, 255, 0.9) !important;
+    font-weight: normal !important;
+font-size: 1.6em !important;
+}
+
+.rowMore .btn{
+   color: #5F5F5F;
+background-color: #fff;
+border-color: #fff;
+margin-top: 30px;
+font-size: 1.4em;
+text-transform: capitalize;
+}
+
+.rowMore .btn:hover{
+     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.rowPurple{
+    background-color: #7D8AA2;
+}
+
+.rowPurple .thumbnail{
+    background-color: #4B5567;
+}
+
+.rowPurple .caption a{
+    background: #4B5567 none repeat scroll 0% 0%;
+color: #FFF;
+border: 1px solid #717884;
+}
+
+.rowPurple .caption .btnPrice{
+    background: #717884;
+
+}
+
+.rowBlue{
+    background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_embroidery.png");
+    padding:0;
+}
+
+.blueImg{
+    background-color: rgba(60, 62, 74, 0.4);
+    padding:30px;
+    height: 100%;
+}
+
+footer{
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0%;
+    position: absolute;
+    width: 100%;
+    height:auto;
+    bottom: 0;
+}
+
+
+.themeContact ul{
+   padding-top:20px; 
+   padding-bottom:20px; 
+   float: right;
+}
+
+.themeContact .themeEmail{
+float: left;
+margin-top: 40px;
+display: block;
+color: #5F5F5F;
+font-size: 1.2em;
+}
+

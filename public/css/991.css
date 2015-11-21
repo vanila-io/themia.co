@@ -1,0 +1,51 @@
+@media screen and (max-width: 991px) {
+    .rowTeam .col-md-12 .col-md-3 {
+        width: 50%;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .rowTechnologies {
+        padding-bottom: 40px;
+    }
+    .techBox {
+        float: left;
+    }
+    .rowContact .col-md-8,
+    .rowContact .col-md-4 {
+        float: left;
+        width: 50%;
+    }
+    .memberHeader ul li {
+        width: 50%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .rowService .col-md-3 {
+        width: 50%;
+        height: 33.3%!important;
+        float: left;
+    }
+    .rowService .col-md-3:first-child,
+    .rowService .col-md-3:nth-child(4),
+    .rowService .col-md-3:nth-child(5),
+    .rowService .col-md-3:nth-child(8) {
+        background-color: #68B471;
+    }
+    .techBox {
+        width: 25%;
+        float: left;
+    }
+    .weUse {
+        padding-right: 20px;
+        padding-left: 20px;
+        height: 25%;
+    }
+    .rowService .col-md-3:nth-child(3),
+    .rowService .col-md-3:nth-child(6) {
+        background-color: #77CD8A;
+    }
+    .item h2 {
+        font-size: 2.2em;
+        padding: 0 20px;
+    }
+}
