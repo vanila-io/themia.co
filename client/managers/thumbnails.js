@@ -1,4 +1,3 @@
-// Template.themeThumbnails.onCreated
 Template.thumbnails.helpers({
   themes: function(){
     console.log("inside theme helper");
