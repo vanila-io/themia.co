@@ -1,10 +1,8 @@
 <template name="layout">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <div class="header">
+      <div id="main">
+       <header class="headerLand headerGhost">
           {{> header }}
-        </div>
+        </header>
         <br><br>
         <div class="content">
           {{> yield }}
@@ -13,13 +11,42 @@
         <div class="footer">
           {{> footer }}
         </div>
-      </div>
-    </div>
-  </div>
+</div>
 </template>
 
 <template name="header">
-  header
+
+
+
+<div class="themeImg">
+<nav id="navbaric" data-sr="enter top hustle 50px over 1.5s" class="moveRight navigation-home navbar navbaric themeNav" role="navigation">
+<div class="container">
+<div class="navbar-header page-scroll">
+<button type="button" class="navbar-toggle collapsed push" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><i class="fa fa-ellipsis-v"></i> </button>
+<a class="navbar-brand page-scroll aHome" href="#home"><img src="{{ dict 'site.logo.url' }}"></a>
+</div>
+<div class="collapse navbar-collapse" id="">
+<ul class="nav navbar-nav navbar-right">
+<li><a class="page-scroll aServices" href="#services">Freebies</a> </li>
+<!--<li><a id="scrollTeam" class="page-scroll aTeam" href="#team">Paid</a> </li>-->
+<li><a class="page-scroll aTech" href="#technologies">Learn about us</a> </li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="headerWrap-themes">
+<canvas width='1200' height='480' id="hero-bar" style="display:none;"></canvas>
+<div class="row rowHeader">
+<div class="container">
+ <h1 data-sr="enter top wait 0.6s over 1.2s">{{siteTitle}}
+</h1>
+ <p data-sr="enter top wait 1s over 1s">
+Check out our collection of custom made Ghost themes.
+</p>
+</div>
+</div>
+</div>
+</div>
 </template>
 
 <template name="footer">
