@@ -1,26 +1,17 @@
 <template name="thumbnails">
   {{#each themes}}
   <div class="col-sm-6 col-md-4">
-<<<<<<< HEAD
-    <img class="image" src="{{ image.url }}">
-    <h1>{{title}}</h1>
-    <p>{{description}}</p>
-    <a class="btn" href="demoUrl">preview</a>
-    <a class="btn" href="demoUrl">download</a>
-
-=======
     <div class="thumbnail">
-      <img src="http://content.screencast.com/users/plavo0kac/folders/Jing/media/67464c55-1f24-4e07-95ce-eec2edea60e7/2015-10-25_1618.png" alt="...">
-      <div class="caption">
+    <img class="image" src="{{ image.url }}">
+    <div class="caption">
         <h3>{{title}}</h3>
         <p>{{description}}</p>
         <p>
           <a href="{{previewUrl}}" class="btn btn-primary" role="button">Preview</a>
           <a href="{{downloadUrl}}" class="btn btn-default" role="button">Download</a>
         </p>
-      </div>
-    </div>
->>>>>>> f148afbe733205d74c9ad5dd4fa6d3e70a31f723
+ </div>
   </div>
+   </div>
   {{/each}}
 </template>

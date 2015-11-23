@@ -99,14 +99,14 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: #232830;
     font-family: "Varela Round", sans-serif!important;
     height: 100%;
 }
 
 
 
-#main{height: 100%;}
+#main{height: 100%;    background-color: #232830;
+}
 /*!
 
 
@@ -2111,4 +2111,66 @@ top: -24.5px;font-family: 'Helvetica Neue', Helvetica,  Arial, sans-serif; font-
 }
 .headerGhost {
     height: 70%;
+}
+.rowBlue {
+    background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_embroidery.png");
+    padding: 0px;
+}
+.blueImg {
+    background-color: rgba(60, 62, 74, 0.4);
+    padding: 30px;
+    height: 100%;
+    overflow: hidden;
+}
+.rowMore {
+    background: #F67B7C none repeat scroll 0% 0%;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    position: relative;
+}
+.rowMore h2 {
+    color: #FFF;
+    margin-bottom: 40px;
+    font-size: 46px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.rowMore p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: normal !important;
+    font-size: 1.6em !important;
+}
+.rowMore .btn {
+    color: #5F5F5F;
+    background-color: #FFF;
+    border-color: #FFF;
+    margin-top: 30px;
+    font-size: 1.4em;
+    text-transform: capitalize;
+}
+footer {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0%;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+}
+.themeContact ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: right;
+}
+.themeContact .themeEmail {
+    float: left;
+    margin-top: 40px;
+    display: block;
+    color: #5F5F5F;
+    font-size: 1.2em;
+}
+.themeContact .themeEmail {
+    color: #5F5F5F;
+    font-size: 1.2em;
 }
