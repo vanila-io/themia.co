@@ -27,7 +27,6 @@
 
 *:focus {
     outline: none!important;
-    border: none !important;
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
@@ -825,31 +824,7 @@ min-height: 100%!important;
     font-weight: normal!important;
     margin-bottom: 60px;
 }
-.contactForm button:hover {
-    background-color: #61A6AB;
-    color: #fff;
-}
-.form-control {
-    border: medium none;
-    border-radius: 0px;
-    box-shadow: none;
-    outline: 0px none;
-    background: #27323B none repeat scroll 0% 0%;
-    background: #FFF none repeat scroll 0% 0%;
-    border-radius: 4px;
-    border: 2px solid #37444E;
-    padding: 13px;
-    height: auto;
-    background-color: rgb(42, 55, 66);
-    background-repeat: no-repeat;
-    background-size: 30px auto;
-    padding-left: 50px;
-    background-position: 7px center;
-    color: #9E9E9E;
-}
-.form-control:focus {
-    border: 2px solid #37444E!important;
-}
+
 .iconBudget {
     background-image: url("../img/budget.png");
     background-size: 25px auto;
@@ -1762,9 +1737,6 @@ width: 100%;
 padding: 50px;
 }
 
-.form-control{
-	padding: 13px 13px 13px 50px !important;
-}
 
 .formBox{
 display: block;
@@ -2074,11 +2046,6 @@ top: -24.5px;font-family: 'Helvetica Neue', Helvetica,  Arial, sans-serif; font-
 	bottom: -10px !important;
 }
 
-.form-control2::-webkit-input-placeholder { color: #5F5F5F; }
-.form-control2:-moz-placeholder { color: #5F5F5F; }
-.form-control2::-moz-placeholder { color: #5F5F5F; }
-.form-control2:-ms-input-placeholder { color: #5F5F5F; }
-
  .btnSub2{
  	font-size: 1.6em!important;
  }
@@ -2113,7 +2080,6 @@ top: -24.5px;font-family: 'Helvetica Neue', Helvetica,  Arial, sans-serif; font-
     height: 70%;
 }
 .rowBlue {
-    background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_embroidery.png");
     padding: 0px;
 }
 .blueImg {
@@ -2173,4 +2139,28 @@ footer {
 .themeContact .themeEmail {
     color: #5F5F5F;
     font-size: 1.2em;
+}
+.thumbnail {
+    background: #1C2027 none repeat scroll 0% 0%;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border: medium none;
+    border-radius: 0px;
+    padding: 15px;
+}
+.caption h3 {
+    color: #FFF;
+}
+.caption p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2em;
+}
+.caption a {
+    background: #21252C none repeat scroll 0% 0%;
+    border: medium none;
+    color: #FFF;
+}
+.caption .btn:hover , .caption .btn:focus, .caption .btn:active{
+    box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.3), 0px 15px 12px rgba(0, 0, 0, 0.22);
+    background: #21252C none repeat scroll 0% 0%;
+    color: #FFF;
 }
