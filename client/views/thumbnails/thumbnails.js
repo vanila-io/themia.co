@@ -8,6 +8,9 @@ Template.thumbnails.helpers({
     return themes;
   },
   getCategoryFromId: function(_id){
+  	if(!_id)
+  		return;
+  	
   	return Categories.findOne(_id).name;
   }
 });
