@@ -1,9 +1,13 @@
 Template.thumbnails.helpers({
   themes: function(){
-    console.log("inside theme helper");
+    console.log("Inside theme helper.");
+
     var themes = Themes.find();
-    // console.log(themes);
-    console.log(themes.count());
+    console.log('There is ' + themes.count() + ' themes.');
+
     return themes;
   },
+  getCategoryFromId: function(_id){
+  	return Categories.findOne(_id).name;
+  }
 });
