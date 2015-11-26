@@ -21,6 +21,12 @@ RouterLayer.route('/posts/:_id', {
 	layout: 'layout'
 });
 
+RouterLayer.route('/404', {
+	name: '404',
+	template: '404',
+	layout: 'layout'
+});
+
 RouterLayer.route('/:category/:name', {
 	name: 'theme',
 	template: 'theme',
