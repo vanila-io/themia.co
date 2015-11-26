@@ -7,10 +7,15 @@ Template.thumbnails.helpers({
 
     return themes;
   },
-  'themeUrl': function(url){
-  	if(!url)
+  'themeUrl': function(catId, theme){
+  	if(!catId || !theme)
   		return;
 
-  	return FlowRouter.url('/theme/' + url);
+    var cat = Categories.findOne(catId);
+
+    if(!cat)
+      return;
+
+  	return FlowRouter.url('/' + cat.canonicalName + '/' + theme);
   }
 });

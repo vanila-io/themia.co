@@ -15,14 +15,14 @@ RouterLayer.route('/', {
 	layout: 'layout'
 });
 
-RouterLayer.route('/theme/:name', {
-	name: 'theme',
-	template: 'theme',
-	layout: 'layout'
-});
-
 RouterLayer.route('/posts/:_id', {
 	name: 'post',
 	template: 'post',
+	layout: 'layout'
+});
+
+RouterLayer.route('/:category/:name', {
+	name: 'theme',
+	template: 'theme',
 	layout: 'layout'
 });
