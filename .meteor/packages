@@ -29,3 +29,6 @@ orionjs:summernote
 orionjs:image-attribute
 vsivsi:orion-file-collection
 orionjs:relationships
+tomwasd:flow-router-seo
+spiderable
+gadicohen:phantomjs
