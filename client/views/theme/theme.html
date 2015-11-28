@@ -1,14 +1,48 @@
 <template name="theme">
+
 {{#if Template.subscriptionsReady}}
 
 {{#with theme}}
-{{title}}<br>
-{{description}}<br>
-{{downloadUrl}}<br>
-{{previewUrl}}<br>
-{{type}}<br>
-{{image.url}}<br>
-{{getCategoryFromId category}}<br>
+<div class="moveRight" id="main">
+	<div id="overlay"></div>
+
+<div class="mainContent contTheme">
+	<div class="container">
+
+<h1>{{title}}</h1>
+<span class="cat">{{getCategoryFromId category}}<span class="price"> / {{type}}</span></span>
+
+
+<img class="image" src="{{ image.url }}">
+<p class="desc">{{description}}
+</p>
+ <p class="info">
+          <a href="{{previewUrl}}" class="btn btn-primary" role="button">Preview</a>
+          <a href="{{downloadUrl}}" class="btn btn-default" role="button">Download</a>
+        </p>
+
+
+</div>
+
+</div>
+<div id="themeFooter" class="row rowService rowMore">
+
+<footer>
+   <div class="themeContact container">
+<ul class="ulSocials">
+<li><a class="iconTw" href="https://twitter.com/vanila_io"><i class="fa fa-twitter"></i></a> </li>
+<li><a class="iconFb" href="https://www.facebook.com/Vanilaio-1640968586167308/"><i class="fa fa-facebook"></i></a> </li>
+<li><a class="iconLi" href="https://www.linkedin.com/company/vanila-io---web-studio"><i class="fa fa-linkedin"></i></a> </li>
+</ul>
+<span class="themeEmail">
+    Our email: <span>stefan@vanila.io</span>
+</span>
+   </div>
+</footer>
+</div>
+</div>
+
+
 {{/with}}
 
 {{else}}
