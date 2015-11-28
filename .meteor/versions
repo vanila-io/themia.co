@@ -47,7 +47,6 @@ insecure@1.0.4
 jeremy:selectize@0.12.1_4
 jquery@1.11.4
 kadira:blaze-layout@2.3.0
-kadira:dochead@1.4.0
 kadira:flow-router@2.10.0
 launch-screen@1.0.4
 less@2.5.1
