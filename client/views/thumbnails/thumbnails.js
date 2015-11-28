@@ -35,7 +35,7 @@ Template.thumbnails.helpers(
   'themeDescription': function(Id)
   {
     var theme = Themes.findOne(Id);
-    var desc = $(theme.description).text(); //Removing all HTML tags
+    var desc = $('<p>').html(theme.description).text(); //Removing all HTML tags
     return desc.slice(0, 100) + '...';
   }
 });
