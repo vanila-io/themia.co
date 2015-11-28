@@ -1,4 +1,6 @@
 <template name="thumbnails">
+{{#if Template.subscriptionsReady}}
+
   {{#each themes}}
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
@@ -15,4 +17,10 @@
   </div>
    </div>
   {{/each}}
+
+{{else}}
+
+Loading...
+
+{{/if}}
 </template>

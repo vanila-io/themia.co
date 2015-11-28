@@ -1,4 +1,6 @@
 <template name="theme">
+{{#if Template.subscriptionsReady}}
+
 {{#with theme}}
 {{title}}<br>
 {{description}}<br>
@@ -8,4 +10,10 @@
 {{image.url}}<br>
 {{getCategoryFromId category}}<br>
 {{/with}}
+
+{{else}}
+
+Loading...
+
+{{/if}}
 </template>
