@@ -10,3 +10,8 @@ UI.registerHelper('getCategoryFromId', function(_id)
 
 	return cat.name;
 });
+
+UI.registerHelper('pageUrl', function()
+{
+	return FlowRouter.url(FlowRouter.current().path);
+})
