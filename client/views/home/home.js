@@ -1,33 +1,26 @@
 Template.home.onCreated(function()
 {
-	SEO.set(
+	var i = setInterval(function()
 	{
-		title: orion.dictionary.get('seo.title', 'Themia.co'),
-		description: orion.dictionary.get('seo.description'),
-		meta: 
+		if(orion.dictionary.isReady())
 		{
-			'property="og:type"': 'website',
-			'property="og:title"': orion.dictionary.get('seo.title', 'Themia.co'),
-			'property="og:description"': orion.dictionary.get('seo.description'),
-			'property="og:url"': FlowRouter.url(''),
-			'property="og:image"': 'og.png' //OG IMAGE HERE
-		}
-	});
-
-	setTimeout(function()
-	{
-		SEO.set(
-		{
-			title: orion.dictionary.get('seo.title', 'Themia.co'),
-			description: orion.dictionary.get('seo.description'),
-			meta: 
+			SEO.set(
 			{
-				'property="og:type"': 'website',
-				'property="og:title"': orion.dictionary.get('seo.title', 'Themia.co'),
-				'property="og:description"': orion.dictionary.get('seo.description'),
-				'property="og:url"': FlowRouter.url(''),
-				'property="og:image"': 'og.png' //OG IMAGE HERE
-			}
-		});
-	}, 500);
+				title: orion.dictionary.get('seo.title'),
+				description: orion.dictionary.get('seo.description'),
+				meta: 
+				{
+					'property="og:type"': 'website',
+					'property="og:title"': orion.dictionary.get('seo.title'),
+					'property="og:description"': orion.dictionary.get('seo.description'),
+					'property="og:url"': FlowRouter.url(''),
+					'property="og:image"': 'og.png' //OG IMAGE HERE
+				}
+			});
+
+			clearInterval(i);
+		}
+
+		console.log('i');
+	}, 100);
 });
