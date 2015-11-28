@@ -35,7 +35,7 @@ Template.theme.onCreated(function()
 			'property="og:title"': seoTitle,
 			'property="og:description"': seoDescription,
 			'property="og:url"': FlowRouter.url(FlowRouter.current().path),
-			'property="og:image"': theme.image
+			'property="og:image"': theme.image.url
 		}
 	});
 });
