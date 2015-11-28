@@ -57,6 +57,7 @@ matb33:collection-hooks@0.7.15
 meteor@1.1.10
 meteor-base@1.0.1
 meteor-platform@1.2.3
+meteorhacks:fast-render@2.10.0
 meteorhacks:inject-data@1.4.1
 meteorhacks:inject-initial@1.0.3
 meteorhacks:picker@1.0.3
