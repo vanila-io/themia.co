@@ -20,7 +20,5 @@ Template.home.onCreated(function()
 
 			clearInterval(i);
 		}
-
-		console.log('i');
 	}, 100);
 });
