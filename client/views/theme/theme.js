@@ -23,7 +23,7 @@ Template.theme.onCreated(function()
 
 	Session.set('theme', theme);
 
-	var seoTitle = theme.title + ' - ' + orion.dictionary.get('seo.title');
+	var seoTitle = theme.title;
 	var seoDescription = theme.description.slice(0, 155);
 
 	SEO.set(
@@ -35,7 +35,7 @@ Template.theme.onCreated(function()
 			'property="og:title"': seoTitle,
 			'property="og:description"': seoDescription,
 			'property="og:url"': FlowRouter.url(FlowRouter.current().path),
-			'property="og:image"': theme.image.url
+			'property="og:image"': theme.image ? theme.image.url : ''
 		}
 	});
 });
