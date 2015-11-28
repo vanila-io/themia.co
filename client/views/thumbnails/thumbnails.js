@@ -14,7 +14,7 @@ Template.thumbnails.helpers(
         'property="og:title"': orion.dictionary.get('seo.title'),
         'property="og:description"': orion.dictionary.get('seo.description'),
         'property="og:url"': FlowRouter.url(''),
-        'property="og:image"': FlowRouter.url('og.png') //OG IMAGE HERE
+        'property="og:image"': FlowRouter.url('themia-og.png') //OG IMAGE HERE
       }
     });
 
