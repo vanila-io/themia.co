@@ -27,7 +27,7 @@ Template.theme.helpers({
 				'property="og:title"': seoTitle,
 				'property="og:description"': seoDescription,
 				'property="og:url"': FlowRouter.url(FlowRouter.current().path),
-				'property="og:image"': theme.image ? theme.image.url : ''
+				'property="og:image"': theme.image ? FlowRouter.url(theme.image.url) : ''
 			}
 		});
 

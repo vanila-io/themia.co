@@ -14,7 +14,7 @@ Template.thumbnails.helpers(
         'property="og:title"': orion.dictionary.get('seo.title'),
         'property="og:description"': orion.dictionary.get('seo.description'),
         'property="og:url"': FlowRouter.url(''),
-        'property="og:image"': 'og.png' //OG IMAGE HERE
+        'property="og:image"': FlowRouter.url('themia-og.png') //OG IMAGE HERE
       }
     });
 
@@ -31,6 +31,12 @@ Template.thumbnails.helpers(
       return;
 
   	return FlowRouter.url('/' + cat.canonicalName + '/' + theme);
+  },
+  'themeDescription': function(Id)
+  {
+    var theme = Themes.findOne(Id);
+    var desc = $(theme.description).text(); //Removing all HTML tags
+    return desc.slice(0, 100) + '...';
   }
 });
 
