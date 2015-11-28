@@ -1,0 +1,21 @@
+<template name='category'>
+
+{{#if Template.subscriptionsReady}}
+
+{{#each themes}}
+{{title}}<br>
+{{description}}<br>
+{{type}}<br>
+{{image.url}}<br>
+{{downloadUrl}}<br>
+{{previewUrl}}<br>
+{{categoryName}}<br><br>
+{{/each}}
+
+{{else}}
+
+Loading...
+
+{{/if}}
+
+</template>
