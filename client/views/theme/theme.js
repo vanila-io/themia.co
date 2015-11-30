@@ -16,7 +16,7 @@ Template.theme.helpers({
 		}
 
 		var seoTitle = theme.title + ' theme for ' + cat.name;
-		var seoDescription = theme.description.slice(0, 155);
+		var seoDescription = $('<p>').html(theme.description.slice(0, 155)).text();
 
 		SEO.set(
 		{
