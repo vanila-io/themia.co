@@ -7,61 +7,73 @@
 <div class="moveRight" id="main">
 	<div id="overlay"></div>
 
+	<div class="mainContent contTheme" itemscope itemtype="http://schema.org/Product">
+		<meta itemprop="description" content="{{shorterText description}}"/>
+		<div class="container">
+			<h1 itemprop="name">{{title}}</h1>
 
-<div class="mainContent contTheme" itemscope itemtype="http://schema.org/Product">
-	<div class="container">
+			<span class="cat" itemprop="category">
+				{{getCategoryFromId category}}<span class="price"> / {{type}}</span>
+			</span>
 
-<h1 itemprop="name">{{title}}</h1>
-<span class="cat" itemprop="category">{{getCategoryFromId category}}<span class="price"> / {{type}}</span></span>
+			<img class="image" itemprop="image" src="{{ image.url }}">
+			<p class="desc">{{{description}}}</p>
+			
+			<p class="info">
+          		<a href="{{previewUrl}}" class="btn btn-primary" role="button">Preview</a>
+          		<a href="{{downloadUrl}}" class="btn btn-default" role="button">Download</a>
 
+				<div id="disqus_thread"></div>
+			</p>
+		</div>
+	</div>
 
-<img class="image" itemprop="image" src="{{ image.url }}">
-<p class="desc">{{{description}}}</p>
-<meta itemprop="description" content="{{shorterText description}}"/>
-<p class="info">
-          <a href="{{previewUrl}}" class="btn btn-primary" role="button">Preview</a>
-          <a href="{{downloadUrl}}" class="btn btn-default" role="button">Download</a>
-<div id="disqus_thread"></div>
-</p>
+	<div id="themeFooter" class="row rowService rowMore">
 
-</div>
+		<footer>
+   			<div class="themeContact container">
+				<ul class="ulSocials">
+					<li>
+						<a class="iconTw" href="https://twitter.com/vanila_io">
+						<i class="fa fa-twitter"></i></a>
+					</li>
+					<li>
+						<a class="iconFb" href="https://www.facebook.com/Vanilaio-1640968586167308/">
+						<i class="fa fa-facebook"></i></a>
+					</li>
+					<li>
+						<a class="iconLi" href="https://www.linkedin.com/company/vanila-io---web-studio">
+						<i class="fa fa-linkedin"></i></a>
+					</li>
+				</ul>
+				<span class="themeEmail">
+				    Our email: <span>stefan@vanila.io</span>
+				</span>
+   			</div>
+		</footer>
 
-</div>
-
-
-<div id="themeFooter" class="row rowService rowMore">
-
-<footer>
-   <div class="themeContact container">
-<ul class="ulSocials">
-<li><a class="iconTw" href="https://twitter.com/vanila_io"><i class="fa fa-twitter"></i></a> </li>
-<li><a class="iconFb" href="https://www.facebook.com/Vanilaio-1640968586167308/"><i class="fa fa-facebook"></i></a> </li>
-<li><a class="iconLi" href="https://www.linkedin.com/company/vanila-io---web-studio"><i class="fa fa-linkedin"></i></a> </li>
-</ul>
-<span class="themeEmail">
-    Our email: <span>stefan@vanila.io</span>
-</span>
-   </div>
-</footer>
-</div>
+	</div>
 </div>
 
 
 <script>
-var disqus_config = function () {
-this.page.url = '{{pageUrl}}';
-this.page.identifier = '{{_id}}';
-};
-
-(function() {
-var d = document, s = d.createElement('script');
-s.src = '//themia.disqus.com/embed.js';
-
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+	var disqus_config = function(){
+	this.page.url = '{{pageUrl}}';
+	this.page.identifier = '{{_id}}';
+	};
+	(function() {
+	var d = document, s = d.createElement('script');
+	s.src = '//themia.disqus.com/embed.js';
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+	})();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+<noscript>
+	Please enable JavaScript to view the 
+	<a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by
+	Disqus.</a>
+</noscript>
 
 {{/with}}
 
