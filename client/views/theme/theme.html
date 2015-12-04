@@ -7,27 +7,28 @@
 <div class="moveRight" id="main">
 	<div id="overlay"></div>
 
-<div class="mainContent contTheme">
+
+<div class="mainContent contTheme" itemscope itemtype="http://schema.org/Product">
 	<div class="container">
 
-<h1>{{title}}</h1>
-<span class="cat">{{getCategoryFromId category}}<span class="price"> / {{type}}</span></span>
+<h1 itemprop="name">{{title}}</h1>
+<span class="cat" itemprop="category">{{getCategoryFromId category}}<span class="price"> / {{type}}</span></span>
 
 
-<img class="image" src="{{ image.url }}">
-<p class="desc">{{{description}}}
-</p>
+<img class="image" itemprop="image" src="{{ image.url }}">
+<p class="desc">{{{description}}}</p>
+<meta itemprop="description" content="{{shorterText description}}"/>
 <p class="info">
           <a href="{{previewUrl}}" class="btn btn-primary" role="button">Preview</a>
           <a href="{{downloadUrl}}" class="btn btn-default" role="button">Download</a>
 <div id="disqus_thread"></div>
 </p>
 
-
-
 </div>
 
 </div>
+
+
 <div id="themeFooter" class="row rowService rowMore">
 
 <footer>
