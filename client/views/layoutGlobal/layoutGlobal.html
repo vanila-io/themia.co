@@ -1,24 +1,21 @@
 <template name="layoutGlobal">
-      <div id="main">
-       <header class="headerTheme">
-          <nav id="navbaric" data-sr="enter top hustle 50px over 1.5s" class="moveRight navigation-home navbar navbaric themeNav" role="navigation">
-<div class="container">
-<div class="navbar-header page-scroll">
-<button type="button" class="navbar-toggle collapsed push" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><i class="fa fa-ellipsis-v"></i> </button>
-<a class="navbar-brand page-scroll aHome" href="/"><img src="{{ dict 'site.logo.url' }}"></a>
-</div>
-<div class="collapse navbar-collapse" id="">
-<ul class="nav navbar-nav navbar-right">
-<li><a class="page-scroll aServices" href="#services">Freebies</a> </li>
-<!--<li><a id="scrollTeam" class="page-scroll aTeam" href="#team">Paid</a> </li>-->
-<li><a class="page-scroll aTech" href="#technologies">Learn about us</a> </li>
-</ul>
-</div>
-</div>
-</nav>
-        </header>
-
+<div id="main">
+    <header class="headerTheme">
+        <nav id="navbaric" data-sr="enter top hustle 50px over 1.5s" class="moveRight navigation-home navbar navbaric themeNav" role="navigation">
+			<div class="container">
+			<div class="navbar-header page-scroll">
+			<a class="navbar-brand page-scroll aHome" href="/"><img src="{{ dict 'site.logo.url' }}"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="">
+			<ul class="nav navbar-nav navbar-right">
+			<li><a class="page-scroll aServices" href="#services">Freebies</a> </li>
+			<!--<li><a id="scrollTeam" class="page-scroll aTeam" href="#team">Paid</a> </li>-->
+			<li><a class="page-scroll aTech" href="#technologies">Learn about us</a> </li>
+			</ul>
+			</div>
+			</div>
+		</nav>
+    </header>
           {{> yield }}
-
 </div>
 </template>

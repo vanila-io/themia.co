@@ -18,11 +18,11 @@
 
 			<img class="image" itemprop="image" src="{{ image.url }}">
 			<p class="desc">{{{description}}}</p>
-			
-			<p class="info">
-          		<a href="{{previewUrl}}" class="btn btn-primary" role="button">Preview</a>
-          		<a href="{{downloadUrl}}" class="btn btn-default" role="button">Download</a>
 
+			<p class="info">
+          		<a href="{{previewUrl}}" class="btn btn-primary" role="button" target="_blank">Preview</a>
+          		<a href="{{downloadUrl}}" class="btn btn-default" role="button">Download</a>
+				<a href="{{githubRepository}}" class="btn btn-default btnRepo" role="button" target="_blank">Github repo</a>
 				<div id="disqus_thread"></div>
 			</p>
 		</div>
@@ -70,7 +70,7 @@
 </script>
 
 <noscript>
-	Please enable JavaScript to view the 
+	Please enable JavaScript to view the
 	<a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by
 	Disqus.</a>
 </noscript>

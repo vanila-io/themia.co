@@ -2,6 +2,116 @@ html,body{
 	background-color: #232830;
 }
 
+.themeImg h1, .themeImg p {
+    text-align: center;
+    width: 100%;
+}
+
+.themeImg {
+    background-image: url("http://jelenajovanovic.im/img/seamlessBg.png");
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.themeNav {
+    background: transparent none repeat scroll 0% 0%;
+}
+.headerWrap-themes {
+    position: absolute;
+    top: 0px;
+    background-color: rgba(12, 29, 44, 0.9);
+    width: 100%;
+    height: 100%;
+}
+.headerGhost {
+    height: 70%;
+}
+.rowBlue {
+    padding: 0px;
+}
+.blueImg {
+    background-color: rgba(60, 62, 74, 0.4);
+    padding: 30px;
+    height: 100%;
+    overflow: hidden;
+}
+.rowMore {
+background: #1D1D1D none repeat scroll 0% 0%;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+	height: auto;
+}
+.rowMore h2 {
+color: #383838;
+margin-bottom: 20px;
+font-size: 46px;
+text-align: center;
+margin-top: 20px;
+}
+
+.rowMore p {
+    color: #666;
+    font-weight: normal !important;
+    font-size: 1.6em !important;
+}
+.rowMore .btn {
+    color: #EDEDED;
+background-color: #1D1D1D;
+border-color: #EDEDED;
+    margin-top: 30px;
+    font-size: 1.4em;
+    text-transform: capitalize;
+}
+footer {
+background: #303844 none repeat scroll 0% 0%;
+    width: 100%;
+    height: auto;
+    margin-top:30px;
+}
+.themeContact ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: right;
+}
+.themeContact .themeEmail {
+    float: left;
+    margin-top: 40px;
+    display: block;
+    color:#DBDBDB;
+    font-size: 1.2em;
+}
+
+.thumbnail {
+    background: #1C2027 none repeat scroll 0% 0%;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border: medium none;
+    border-radius: 0px;
+    padding: 15px;
+}
+.caption h3 a{
+    color: #FFF;
+    background:transparent;
+}
+.caption p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2em;
+}
+.caption a {
+    background: #21252C none repeat scroll 0% 0%;
+    border: medium none;
+    color: #FFF;
+    margin-bottom: 5px;
+}
+.caption .btn:hover , .caption .btn:focus, .caption .btn:active{
+    box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.3), 0px 15px 12px rgba(0, 0, 0, 0.22);
+    background: #21252C none repeat scroll 0% 0%;
+    color: #FFF;
+}
+
+
 .headerTheme{
 	height:auto;
 }
@@ -45,10 +155,12 @@ text-align: left;
 	display: block;
 overflow: hidden;
 float: left;
+width:100%;
+text-align: left;
 }
 
 .contTheme p.info a{
-	background: #21252C none repeat scroll 0% 0%;
+	background: #408F77;
 border: medium none;
 color: #FFF;
 padding: 10px 30px;
@@ -59,7 +171,7 @@ font-size: 1.1em;
 
 .contTheme p.info a:hover, .contTheme p.info a:active, .contTheme p.info a:focus{
 box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.3), 0px 15px 12px rgba(0, 0, 0, 0.22);
-background: #21252C none repeat scroll 0% 0%;
+background: #408F77 none repeat scroll 0% 0%;
 color: #FFF;
 padding: 10px 30px;
 font-size: 1.1em;
@@ -71,4 +183,33 @@ font-size: 1.1em;
 }
 span.price{
 	color: #fff;
+}
+
+#disqus_thread{
+	margin-top:30px;
+}
+
+.btnRepo{
+	float: right;
+}
+
+
+@media (max-width: 533px) {
+
+	.contTheme p.info a{
+		float: none!important;
+		margin-bottom: 3px;
+	}
+
+	footer{
+		padding-bottom:20px;
+	}
+
+	.themeContact ul, .themeContact .themeEmail{
+		float:none;
+	}
+
+	.themeContact .themeEmail{
+		margin-top:0;
+	}
 }
